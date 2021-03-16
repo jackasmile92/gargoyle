@@ -45,7 +45,13 @@ body {
     z-index: 1000;
     position: fixed;
     width: 100%;
+    transition: .5s;
 }
+
+.header--hidden{
+    margin-top: -200px;
+}
+
 
 .header__inner {
     display: flex;
@@ -153,6 +159,7 @@ body {
     
     text-shadow: 1px 1px 1px black, 0 0 1em #fefefe;
     animation: red-blink 4s linear infinite;
+    cursor: default;
 }
 
 @keyframes red-blink{
@@ -250,3 +257,20 @@ body {
     margin-top: 20px;
 }
 
+/* about */
+.about{
+    height: 100vh;
+    width: 100%;
+}
+
+/* contact */
+.contact{
+    height: 90vh;
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+}
+
+/* footer */
+.footer{
+    height: 20vh;
+}

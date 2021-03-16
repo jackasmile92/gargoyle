@@ -1,0 +1,33 @@
+#scrollpath {
+    z-index: 999;
+    position: fixed;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0;
+    width: 3px;
+    height: 100vh;
+    background: #ff474775;
+}
+
+#progressbar {
+    z-index: 101;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 54px;
+    background: #ff4747;
+}
+
+
+#progressbar:after {
+    filter: blur(30px);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
