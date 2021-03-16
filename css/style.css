@@ -195,15 +195,15 @@ body {
     content: '';
     width: 120px;
     height: 120px;
-    background-color: #ff4747;
+    
     border-radius: 50%;
     z-index: 4;
     transition: .5s;
+    background-color: #fefefe;
 }
 
  .top__btn:hover .top__btn-txt::before {
-    left: 120px;
-    top: -50%;
+    left: 120px;background-color: #ff4747;
 }
 
 .top__btn:hover{
