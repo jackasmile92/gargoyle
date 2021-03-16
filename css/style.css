@@ -179,7 +179,7 @@ body {
     90.1%,
     95% {
         color: rgb(156, 156, 156);
-        text-shadow: 1px 1px 1px black, 0 0 1em rgb(156, 156, 156);
+        text-shadow: 1px 1px 1px black;
     }
 }
 
