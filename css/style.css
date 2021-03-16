@@ -152,7 +152,37 @@ body {
     font-size: 120px;
     
     text-shadow: 1px 1px 1px black, 0 0 1em #fefefe;
+    animation: red-blink 4s linear infinite;
 }
+
+@keyframes red-blink{
+    0%,
+    5%,
+    10.1%,
+    15.1%,
+    25.1%,
+    45%,
+    70.1%,
+    90%,
+    100% {
+        color: #fefefe;
+        text-shadow: 1px 1px 1px black, 0 0 1em #fefefe;
+    }
+
+
+    5.1%,
+    10%,
+    15.2%,
+    25%,
+    45.1%,
+    70%,
+    90.1%,
+    95% {
+        color: rgb(156, 156, 156);
+        text-shadow: 1px 1px 1px black, 0 0 1em rgb(156, 156, 156);
+    }
+}
+
 
 .top__text{
     color: #ff4747;
