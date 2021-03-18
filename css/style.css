@@ -345,6 +345,20 @@ body {
     padding-top: 15px;
 }
 
+.contact__social{
+    display: flex;
+}
+
+.contact__social-link{
+font-size: 25px;
+color: #000;
+margin-right: 15px;
+transition: .5s;
+}
+
+.contact__social-link:hover{
+    color: #ff4747;
+}
 /* footer */
 .footer {
     height: 20vh;
