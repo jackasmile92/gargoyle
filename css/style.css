@@ -28,6 +28,14 @@ li {
     height: inherit;
 }
 
+.title {
+    font-family: 'PT Sans Caption', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -48,7 +56,7 @@ body {
     transition: .5s;
 }
 
-.header--hidden{
+.header--hidden {
     margin-top: -200px;
 }
 
@@ -69,11 +77,12 @@ body {
 .header__menu {
     display: flex;
 }
-.header__menu-item{
+
+.header__menu-item {
     margin-left: 20px;
 }
 
-.header__menu-link{
+.header__menu-link {
     font-family: 'PT Sans Caption', sans-serif;
     text-transform: uppercase;
     color: #000000;
@@ -82,7 +91,7 @@ body {
     transition: .5s;
 }
 
-.header__menu-link:hover{
+.header__menu-link:hover {
     border-bottom: 1px solid #ff4747;
     color: #ff4747;
 }
@@ -101,9 +110,9 @@ body {
     position: absolute;
     z-index: 1;
     margin-left: -80px;
-  }
-  
-  .header__logo-wrapper .tooltiptext::after {
+}
+
+.header__logo-wrapper .tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -112,26 +121,26 @@ body {
     border-width: 5px;
     border-style: solid;
     border-color: black transparent transparent transparent;
-  }
-  
-  .header__logo-wrapper:hover .tooltiptext {
+}
+
+.header__logo-wrapper:hover .tooltiptext {
     visibility: visible;
-  }
+}
 
 /* top */
 
-.top{
+.top {
     width: 100%;
     height: 100vh;
     overflow: hidden;
     position: relative;
 }
 
-.top__bkg{
+.top__bkg {
     position: absolute;
-    width:  100%;
+    width: 100%;
     height: 100%;
-    background:url('../images/top-bg.webp');
+    background: url('../images/top-bg.webp');
     background-size: cover;
     background-position: center;
 
@@ -139,7 +148,7 @@ body {
     z-index: -1;
 }
 
-.top__inner{
+.top__inner {
     position: absolute;
     top: 65%;
     left: 50%;
@@ -152,17 +161,18 @@ body {
     /* background-color: hsla(0, 0%, 0%, 0.3); */
 }
 
-.top__header{
+.top__header {
     color: #fefefe;
     font-family: 'Fondamento', cursive;
     font-size: 120px;
-    
+
     text-shadow: 1px 1px 1px black, 0 0 1em #fefefe;
     animation: red-blink 4s linear infinite;
     cursor: default;
 }
 
-@keyframes red-blink{
+@keyframes red-blink {
+
     0%,
     5%,
     10.1%,
@@ -191,16 +201,16 @@ body {
 }
 
 
-.top__text{
+.top__text {
     color: #ff4747;
     font-family: 'PT Sans Caption', sans-serif;
     text-transform: uppercase;
     font-size: 16px;
     text-shadow: 1px 1px 1px black, 0 0 1em red;
-    margin-bottom: -70px;   
+    margin-bottom: -70px;
 }
 
-.top__btn{    
+.top__btn {
     position: relative;
     display: block;
     width: 110px;
@@ -211,8 +221,8 @@ body {
     font-family: 'Roboto';
     font-weight: 700;
     color: #000000;
-   
-    margin:0 auto; 
+
+    margin: 0 auto;
     margin-top: 20px;
     overflow: hidden;
     transition: .5s;
@@ -220,36 +230,37 @@ body {
     box-shadow: 1px 1px 1px black, 0 0 1em #fefefe;
 }
 
-.top__btn-txt{
+.top__btn-txt {
     z-index: 15;
     display: block;
 }
 
-.top__btn-txt::before{
+.top__btn-txt::before {
     position: absolute;
     bottom: -50%;
     left: -120px;
     content: '';
     width: 120px;
     height: 120px;
-    
+
     border-radius: 50%;
     z-index: 4;
     transition: .5s;
     background-color: #fefefe;
 }
 
- .top__btn:hover .top__btn-txt::before {
-    left: 120px;background-color: #ff4747;
+.top__btn:hover .top__btn-txt::before {
+    left: 120px;
+    background-color: #ff4747;
 }
 
-.top__btn:hover{
+.top__btn:hover {
     background-color: #ff4747;
     color: #fefefe;
     box-shadow: 1px 1px 1px black, 0 0 1em #ff4747;
 }
 
-.top__line{
+.top__line {
     width: 2px;
     height: 60px;
     background-color: #fefefe;
@@ -258,19 +269,156 @@ body {
 }
 
 /* about */
-.about{
+.about {
     height: 100vh;
     width: 100%;
 }
 
 /* contact */
-.contact{
-    height: 90vh;
+.contact {
+    min-height: 90vh;
     width: 100%;
     background-color: rgb(236, 236, 236);
 }
 
+.contact__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact__img {
+    width: 49%;
+    filter: grayscale(90%) contrast(80%);
+}
+
+.contact__info {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.contact__btn {
+    border: none;
+    margin-left: 0;
+    cursor: pointer;
+    box-shadow:  1px 1px 1px black;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-top: 30px;
+}
+.contact__text{
+    font-size: 17px;
+}
+
+.contact__input {
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.contact__input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.contact__input--high {
+    height: 100px;
+    resize: none;
+    margin-bottom: 0;
+    padding-top: 15px;
+}
+
 /* footer */
-.footer{
+.footer {
     height: 20vh;
+}
+
+.footer__inner {
+    height: inherit;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo-link {
+    height: 60px;
+}
+
+.footer__logo {
+    height: inherit;
+    width: auto;
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer__social {
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__social-link {
+    font-size: 21px;
+    color: #000;
+    margin-left: 8px;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__social-link:hover {
+    color: #ff4747;
+}
+
+.footer__social-link:hover i {
+    font-size: 24px;
+}
+
+.footer__bottom-text {
+    font-family: 'PT Sans Caption', sans-serif;
+    text-transform: uppercase;
+    color: #505050;
+    font-size: 12px;
+}
+
+.footer__bottom-text--bold {
+    font-weight: bold;
+    color: #000;
+}
+
+.footer__bottom {
+    width: inherit;
+    display: flex;
+    justify-content: center;
 }

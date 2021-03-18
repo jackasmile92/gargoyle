@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gargoyle</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Fondamento&family=PT+Sans+Caption:wght@400;700&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/scrollbar.css">
+
 </head>
 
 <body>
@@ -53,7 +56,7 @@
             </div>
         </div>
     </header>
-    <section class="top">
+    <section class="top" id="top">
         <div class="top__bkg"></div>
         <div class="container">
             <div class="top__inner">
@@ -73,14 +76,14 @@
     <section class="about" id="about">
         <div class="container">
             <div class="about__inner">
-
+                <h2 class="title about__title">about us</h2>
             </div>
         </div>
     </section>
     <section class="tours">
         <div class="container">
             <div class="tours__inner">
-
+                <h2 class="title tours__title">tours</h2>
             </div>
         </div>
     </section>
@@ -88,7 +91,37 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="contact__inner">
+                <img class="contact__img" src="images/contact.jpg" alt="">
+                <div class="contact__info">
+                    <h2 class="contact__title title">Have questions?</h2>
+                    <p class="contact__text">
+                        Leave your message here
+                    </p>
+                    <form class="contact__form">
+                        <input class="contact__input" placeholder="Name" type="text">
+                        <input class="contact__input" placeholder="Email" type="text">
+                        <textarea class="contact__input contact__input--high" cols="40" placeholder="Your message..."
+                            rows="5"></textarea>
+                        <button class="contact__btn top__btn" type="submit">
+                            <p class="top__btn-txt">
+                                <span>
+                                    SEND</span>
+                            </p>
+                        </button>
+                    </form>
 
+                    <p class="contact__text">
+                        or DM us at
+                    </p>
+                    <div class="footer__social">
+                        <a class="footer__social-link" href="#">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a class="footer__social-link" href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -96,15 +129,55 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                
+                <div class="footer__top">
+                    <a href="#top" class="footer__logo-link">
+                        <img class="footer__logo" src="images/logo.png" alt="Gargoyle">
+                    </a>
+                    <nav class="footer__nav">
+                        <ul class="header__menu">
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#about">About us</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">Tours</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">Prices</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">Feedback</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#contact">Contact us</a>
+                            </li>
+                        </ul>
+                        <div class="footer__social">
+                            <a class="footer__social-link" href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a class="footer__social-link" href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a class="footer__social-link" href="#">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__bottom-text">
+                        <span class="footer__bottom-text--bold">Gargoyle</span> 2021
+                    </div>
+
+                </div>
             </div>
         </div>
     </footer>
-   
-    
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <script src="/js/scrollbar.js"></script>
-     <script src="/js/header_visibility.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/scrollbar.js"></script>
+    <script src="/js/header_visibility.js"></script>
     <!--<script>
         $(document).ready(function () {
             // Add smooth scrolling to all links
